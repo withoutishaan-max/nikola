@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nikola.lol</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    color:#fff;
+    overflow-x:hidden;
+    background:#000;
+}
+
+/* VIDEO BACKGROUND */
+video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+}
+
+/* DARK OVERLAY */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(3px);
+    z-index:-1;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+
+nav h1{
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    letter-spacing:2px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    margin-left:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#8AA6A3;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h2{
+    font-family:'Playfair Display', serif;
+    font-size:38px;
+    max-width:900px;
+    margin-bottom:20px;
+    animation:fadeUp 1.5s ease forwards;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    opacity:0.85;
+    animation:fadeUp 2s ease forwards;
+}
+
+/* GLASS CARD SECTIONS */
+section{
+    padding:100px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    padding:50px;
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    max-width:900px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.15);
+    animation:fadeUp 1.5s ease forwards;
+}
+
+h3{
+    font-family:'Playfair Display', serif;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.portfolio-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    padding:25px;
+    width:220px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    font-style:italic;
+    opacity:0.7;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:24px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline>
+    <source src="newbg.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<nav>
+    <h1>nikola.lol</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h2>
+        Be a man of your word, whatever you say you might follow it.
+    </h2>
+    <p>
+        Knowledge is above anything in the world whether it's love.
+    </p>
+</div>
+
+<section id="about">
+    <div class="glass">
+        <h3>About</h3>
+        <p>
+            Inspired by innovation. Driven by discipline.  
+            Blending timeless intellect with modern ambition.  
+            A mind focused on knowledge, loyalty, and future vision.
+        </p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="glass">
+        <h3>Portfolio</h3>
+        <div class="portfolio-container">
+            <div class="card">⚡ Projects</div>
+            <div class="card">📜 Ideas</div>
+            <div class="card">🔬 Experiments</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    — nikola.lol ⚡
+</footer>
+
+</body>
+</html>
