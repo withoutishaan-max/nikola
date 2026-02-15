@@ -77,6 +77,39 @@ video{
     opacity:0.85;
 }
 
+/* CONTACT LINE */
+.contact-line{
+    text-align:center;
+    margin:40px auto 20px auto;
+    max-width:800px;
+    padding:0 20px;
+    font-size:16px;
+    opacity:0.8;
+}
+
+/* INSTAGRAM COUNTER */
+.insta-counter{
+    text-align:center;
+    margin:30px auto;
+}
+
+.insta-counter h3{
+    font-weight:500;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.insta-counter p{
+    font-size:32px;
+    font-weight:600;
+    background:rgba(255,255,255,0.08);
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:40px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px rgba(255,255,255,0.1);
+}
+
 /* SOCIAL BUTTONS */
 .socials{
     display:flex;
@@ -109,14 +142,6 @@ footer{
     opacity:0.6;
     font-size:14px;
 }
-.contact-line{
-    text-align:center;
-    margin:40px auto 20px auto;
-    max-width:800px;
-    padding:0 20px;
-    font-size:16px;
-    opacity:0.8;
-}
 
 /* RESPONSIVE */
 @media(max-width:768px){
@@ -129,5 +154,8 @@ footer{
     }
     .quote h2{
         font-size:20px;
+    }
+    .insta-counter p{
+        font-size:24px;
     }
 }
