@@ -109,6 +109,14 @@ footer{
     opacity:0.6;
     font-size:14px;
 }
+.contact-line{
+    text-align:center;
+    margin:40px auto 20px auto;
+    max-width:800px;
+    padding:0 20px;
+    font-size:16px;
+    opacity:0.8;
+}
 
 /* RESPONSIVE */
 @media(max-width:768px){
